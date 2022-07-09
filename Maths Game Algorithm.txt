@@ -1,0 +1,26 @@
+// when we click on the start/reset button
+    // if(we are playing)
+       // reload the page
+
+    //else(we are not playing) 
+       // set the score to 0
+       // show the countdown 
+       // reduce time by 1s in loop 
+            // check if the time is left
+                 // if(yes){continue}
+                 // else(no){show gameover}
+       // change the start/reset button to reset 
+       //  generate new Q&A
+
+// if we click on the answer box
+     // if(if we are playing)
+         // clicked answer is correct?
+              // else(no) {show try again box for 1s}
+
+              // if(yes)
+                   // increase the score by 1
+                   // show correct box for 1s
+                   // generate new Q&A
+      
+      // else(we are not playing)
+        // no action to be taken

@@ -1,0 +1,173 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+}
+
+html{
+    height: 100% ;
+    background: radial-gradient(circle, #fff, #ccc) ;
+    background: -webkit-radial-gradient(circle, #fff, #ccc);   
+    background: -o-radial-gradient(circle, #fff, #ccc);   
+    background: -moz-radial-gradient(circle, #fff, #ccc);
+}
+
+main {
+    height: 475px ; /* change the height to vh */
+    width: 43vw ;
+    background-color: #9DD2EA ;
+    margin: 100px auto;
+    padding: 3vh 1.1vw ;
+    border-radius: 10px ;
+    /*  box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color] */
+    box-shadow: 0px 4px 0px 0px #009de4 ;
+    -moz-box-shadow: 0px 4px 0px 0px #009de4;
+    -webkit-box-shadow: 0px 4px 0px 0px #009de4;
+    display: flex ;
+    flex-direction: column ;
+    position: relative ;
+}
+#firstrow {
+    width: 55% ;
+    margin-left: auto ;
+    display: flex ;
+    flex-direction: row-reverse;
+    justify-content: space-between ;
+}
+#score {
+    width: 6.8vw ;
+    padding: 3.5% ;
+    background-color: #F1FF92 ;
+    color: #888E5F ;
+    box-shadow: 0px 4px 0px #9da853 ;
+    -moz-box-shadow: 0px 4px 0px 0px #9da853;
+    -webkit-box-shadow: 0px 4px 0px 0px #9da853;
+}
+#correct {
+    padding: 3.5% ;
+    color: white ;
+    background-color: #42e252 ;
+    display: none ;
+}
+#wrong {
+    padding: 3.5% ;
+    color: white ;
+    background-color: #de401a ;
+    display: none ;
+}
+
+#secondrow{
+    width: 80%;
+    height: 23vh ;
+    margin: 2% auto 0 auto;
+    background-color: #9DA0EA ;
+    box-shadow: 0px 4px 0px 0px #535AA8 ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+}
+#question {
+    font-size: 7vw ;
+    font-family: monospace ;
+}
+
+#thirdrow {
+    width: 80%;
+    height: 7.5vh ;
+    margin: 2% auto 0 auto;
+    background-color: #B481D9 ;
+    box-shadow: 0px 4px 0px 0px #8153A8 ;
+    -moz-box-shadow: 0px 4px #8153a8;
+    -webkit-box-shadow: 0px 4px #8153a8;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+} 
+#instructions {
+    width: 100% ;
+    text-align: center ;
+}
+
+#fourthrow {
+    width: 80%;
+    height: 13vh ;
+    margin: 2% auto 3% auto;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center ;
+}
+.options {
+    width: 19% ;
+    height: 100% ;
+    background-color: #FFF ;
+    box-shadow: 0px 4px 0px 0px #7EA8BB ;
+    -moz-box-shadow: 0px 4px #7EA8BB;
+    -webkit-box-shadow: 0px 4px #7EA8BB;
+    border-radius: 3px ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    cursor: pointer ;
+    transition: all 0.2s ;
+
+}
+.options:active {
+    background-color: #9DA0EA ;
+    height: calc(13vh + 4px) ;
+    box-shadow: 0 0 0 0 ;
+    color: #FFF ;
+}
+.answer {
+    font-size: 2vw ;
+    font-family: monospace ;
+}
+
+#fifthrow {
+/*    margin: 3% auto 0 auto;*/
+    width: 57.5% ;
+    margin-left: auto ;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center ;
+}
+#startreset{
+    width: 8vw ;
+    background-color: #CEE9F5 ;
+    padding: 2.2% 2.8% ; 
+    text-align: center ;
+    box-shadow: 0px 4px 0px 0px #7EA8BB ;
+    border-radius: 3px ;
+    cursor: pointer ;
+    transition: all 0.2s;
+}
+#startreset:active {
+    background-color: #B481D9 ;
+    box-shadow: 0 0 0 0 ;
+    color: #FFF ;
+}
+#time {
+    padding: 3.5% ;
+    background-color: #B0E64C ;
+    border-radius: 3px ;
+/*    display: none ;*/
+    visibility: hidden ; /* to keep the height of the fifthrow constant */
+    box-shadow: 0px 4px 0px 0px #7EA8BB ;
+}
+
+#gameover {
+    width: 86% ;
+    height: 31vh ;
+    position: absolute ;
+    left: 7% ;
+    top: 15vh ;
+    display: none ;
+/*    display: flex ;*/
+    flex-direction: column ;
+    justify-content: space-around ;
+    align-items: center ;
+    background: linear-gradient(#F3C56B,#F3746C)
+}
+#gameover p {
+    color: #FFF ;
+    font-size: 3vw ;
+}
